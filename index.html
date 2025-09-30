@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Para Ailu ♥</title>
+  <meta name="description" content="Sorpresa romántica y divertida para Ailu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Unna:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header mínimo -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">♥</div>
+        <h1 class="brand-title"></h1>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="pre">30 de septiembre · 2025</p>
+      <h2 id="hero-title" class="title"><span id="typeTarget" class="type"></span></h2>
+      <p class="subtitle">
+        No es un regalo común, es algo hecho para vos… <strong><strong>Es chiquita pero tiene un par de sorpresas.</strong> Divertite.
+      </p>
+
+      <!-- Solo botón de la canción (abre YouTube Music en nueva pestaña) -->
+      <div class="cta">
+        <a class="btn btn-music" href="https://music.youtube.com/watch?v=dCs0f3hZXSc&si=7Nq57AXyUtVX_Y3B" target="_blank" rel="noopener">
+          <span class="icon">🎵</span><span class="label">Reproducir canción</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Hub con contraseña -->
+    <section class="card soft" aria-labelledby="mystery-title">
+      <h3 id="mystery-title" class="card-title">Sorpresas (adivina la contraseña)</h3>
+
+      <div class="mystery-grid">
+        <!-- Juego -->
+        <article class="mystery-card" data-target="#juegoSection" data-type="game" data-pass="777">
+          <h4>Juego</h4>
+          <p class="muted">Mini desafío sacarte una sonrisa.</p>
+          <form class="unlock-form" autocomplete="off">
+            <input class="pass" type="password" inputmode="numeric" placeholder="Contraseña" aria-label="Contraseña del juego">
+            <button class="btn sm" type="submit">Desbloquear</button>
+            <small class="feedback" aria-live="polite"></small>
+          </form>
+        </article>
+
+        <!-- Carta -->
+        <article class="mystery-card" data-target="#letterModal" data-type="letter" data-pass="po">
+          <h4>Carta</h4>
+          <p class="muted">Acá me pongo romántico. Advertida quedás.</p>
+          <form class="unlock-form" autocomplete="off">
+            <input class="pass" type="password" placeholder="Contraseña" aria-label="Contraseña de la carta">
+            <button class="btn sm" type="submit">Desbloquear</button>
+            <small class="feedback" aria-live="polite"></small>
+          </form>
+        </article>
+
+        <!-- Escrachos -->
+        <article class="mystery-card" data-target="#escrachosSection" data-type="pics" data-pass="sya">
+          <h4>Escrachos</h4>
+          <p class="muted">Fotos hermosas.</p>
+          <form class="unlock-form" autocomplete="off">
+            <input class="pass" type="password" placeholder="Contraseña" aria-label="Contraseña de escrachos">
+            <button class="btn sm" type="submit">Desbloquear</button>
+            <small class="feedback" aria-live="polite"></small>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- JUEGO -->
+    <section id="juegoSection" class="card soft hidden" aria-labelledby="game-title">
+      <h3 id="game-title" class="card-title">Juego: encontrá el corazón distinto</h3>
+      <p class="subtitle">Uno brilla un poquito diferente. Si lo tocás, ¡ganás!</p>
+      <div id="gameGrid" class="game-grid" role="group" aria-label="Grilla de corazones"></div>
+      <div id="gameMsg" class="game-msg" aria-live="polite"></div>
+    </section>
+
+    <!-- ESCRACHOS -->
+    <section id="escrachosSection" class="card soft hidden" aria-labelledby="escrachos-title">
+  <h3 id="escrachos-title" class="card-title">Nuestros escrachos</h3>
+  <div class="gallery">
+    <img src="img/ailu1.jpg" alt="Selfie 1">
+    <img src="img/ailu2.jpg" alt="Selfie 2">
+    <img src="img/ailu3.jpg" alt="Selfie 3">
+    <img src="img/ailu4.jpg" alt="Selfie 4">
+    <img src="img/ailu5.jpg" alt="Selfie 5">
+  </div>
+</section>
+
+
+  <!-- Footer mínimo -->
+  <footer class="site-footer">Hecho con ♥ por <strong>Santi</strong>.</footer>
+
+  <!-- Modal Carta -->
+  <dialog id="letterModal" aria-labelledby="letterTitle" aria-modal="true">
+    <div class="modal-head">
+      <h4 id="letterTitle" class="modal-title">Carta para vos</h4>
+      <button class="close" id="closeLetter" aria-label="Cerrar carta">Cerrar</button>
+    </div>
+    <div class="modal-body">
+      <p>
+        Me encanta poder festejarte hoy y desearte un año enorme, lleno de cosas buenas. Tenés una energía especial que hace que todo brille un poco más.
+      </p>
+      <p>
+        Con vos siempre hubo algo especial, y me gusta sentir que todavía hay cosas por compartir. Deseo que esta etapa esté llena de momentos felices, de calma y de todo lo bueno que te merecés, porque sos una persona increíble. Lo digo fácil, pero lo siento de verdad: te extraño.
+      </p>
+      <p>
+        Feliz cumpleaños. Ailu ♥
+      </p>
+      <p class="modal-sign">— Santi</p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
